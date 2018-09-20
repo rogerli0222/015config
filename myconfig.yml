@@ -1,4 +1,10 @@
 spring:
+  application:
+    rabbitmq:
+        host: localhost
+        port: 5672
+        username: guest
+        password: guest
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3310/school?useUnicode=true&characterEncoding=utf8
@@ -11,4 +17,4 @@ eureka:
 management:
   security:
     #关闭安全验证，否则访问refresh端点时会提示权限不足
-    enabled: false
+    enabled: true
